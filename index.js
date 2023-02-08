@@ -1,5 +1,7 @@
 let hs = document.getElementById('hs')
 let As = document.getElementById('As')
+let clear = document.getElementById('clear')
+
 
 let nn = 0
 let vount = 0
@@ -29,3 +31,8 @@ function A3 () {
     vount += 3
     As.textContent = vount
 }
+
+clear.addEventListener("click", function () {
+    As.textContent = ""
+    hs.textContent = ""
+}) 
